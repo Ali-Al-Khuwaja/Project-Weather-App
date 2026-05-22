@@ -4,11 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
 
 <body>
-
+    <main class="container">
+        <h1>Weather App</h1>
+        <div>
+            <form class="search">
+                <fieldset style="display: flex; justify-content: center; gap: 32px;">
+                    <label style="width: 100%;">
+                        <input type="text" name="city" placeholder="Enter city name:" minlength="2" maxlength="30"
+                            required>
+                    </label>
+                    <button style="height: fit-content;">Search</button>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <div style="display: flex; justify-content: space-between;">
+                <h1 class="city">City name</h1>
+                <p class="date">date</p>
+            </div>
+            <hr>
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <h1 class="degrees">something degrees </h1>
+                </div>
+                <div class=" slots" style="width: 40%;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Feels like</p>
+                        <p class="feelsLikeElement">feels like something</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Conditions</p>
+                        <p class="conditionsElement">something is going on</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>UV index</p>
+                        <p class="uvIndexElement">something</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Humidity</p>
+                        <p class="humidityElement">fine I guess</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
