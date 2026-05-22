@@ -1,17 +1,12 @@
-export function normalizeWeather() {
-  //   return {
-  //     city: data.resolvedAddress,
-  //     temperature: data.currentConditions.temp,
-  //     conditions: data.currentConditions.conditions,
-  //     uvIndex: data.currentConditions.uvindex,
-  //   };
+export function normalizeWeather(data) {
+  // Get only needed data
   return {
-    resolvedAddress: 'Test City',
-    currentConditions: {
-      temp: 20,
-      feelslike: 18,
-      uvindex: 5,
-      conditions: 'Sunny',
-    },
+    city: data.resolvedAddress,
+    date: data.currentConditions.datetime,
+    temperature: data.currentConditions.temp,
+    feelsLike: data.currentConditions.feelslike,
+    conditions: data.currentConditions.conditions,
+    uvIndex: data.currentConditions.uvindex,
+    humidity: data.currentConditions.humidity,
   };
 }
