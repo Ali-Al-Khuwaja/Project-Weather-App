@@ -1,3 +1,5 @@
-import { init } from './src/app/app';
+import { loadWeather } from './src/app/app';
+import { setupWeatherForm } from './src/ui/dom';
 
-init();
+// inject app logic into ui logic
+setupWeatherForm(loadWeather);
